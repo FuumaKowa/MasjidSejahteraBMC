@@ -34,3 +34,21 @@
 .viz-note{margin:12px 0 0;text-align:center;color:#607183;font-size:12px}
 @media(max-width:920px){.viz-branches--ten{grid-template-columns:repeat(3,minmax(0,1fr))}.viz-branches--modules{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:620px){.model-visualizer{margin-left:-4px;margin-right:-4px;padding:16px;border-radius:18px}.visualizer-tabs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));width:100%;border-radius:16px}.visualizer-tab{padding:10px 8px;font-size:12px}.viz-root{margin-bottom:30px;padding:12px 18px}.viz-root:after{height:30px}.viz-branches,.viz-branches--ten,.viz-branches--modules{grid-template-columns:1fr;gap:12px;padding-top:10px}.viz-branches:before{display:none}.viz-node{padding:16px}.viz-node:before{left:22px;height:11px}.viz-branches--ten .viz-node{padding:15px}.viz-flow{display:grid;grid-template-columns:1fr;gap:7px}.viz-flow-step{min-height:60px;flex-direction:row;align-items:center;justify-content:flex-start;gap:14px}.viz-flow-step .viz-index{margin:0}.viz-flow-link{justify-self:center;transform:rotate(90deg);line-height:1}.viz-note{text-align:left}}
+/* Editorial rhythm across the proposal chapters */
+.chapter:not(.hero){padding-top:clamp(58px,8vh,96px);padding-bottom:clamp(76px,10vh,116px)}
+.chapter-body{max-width:1120px}
+.chapter h2{max-width:20ch;margin-bottom:clamp(28px,4.3vh,46px)}
+.source-copy.copy-layout{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px 16px;columns:initial;column-rule:0;max-width:none;font-size:clamp(15px,1vw,17px);line-height:1.72;align-items:stretch}
+.source-copy.copy-layout>p{min-width:0;margin:0;padding:19px 21px;border:1px solid rgba(16,43,67,.11);border-radius:15px;background:rgba(255,255,255,.72);color:#344f61;box-shadow:0 8px 24px rgba(16,43,67,.035);break-inside:auto}
+.source-copy.copy-layout>p:first-child:not(.copy-subhead){grid-column:1/-1;padding:23px 26px;border-left:4px solid var(--green);background:linear-gradient(115deg,#e9efe4,#fffdf7 78%);color:#153d50;font-size:1.07em;font-weight:600}
+.source-copy.copy-layout>p.copy-lead{grid-column:1/-1}
+.source-copy.copy-layout>p.copy-wide{grid-column:1/-1}
+.source-copy.copy-layout>p.copy-subhead{grid-column:1/-1;margin:12px 0 -4px;padding:7px 2px 3px;border:0;border-bottom:1px solid rgba(199,162,75,.55);border-radius:0;background:transparent;color:#96712b;box-shadow:none;font:700 12px/1.4 Manrope,sans-serif;letter-spacing:.1em;text-transform:uppercase}
+.source-copy.copy-layout>p.copy-caption{grid-column:1/-1;padding:11px 15px;border:0;border-left:3px solid var(--gold);border-radius:0 9px 9px 0;background:rgba(199,162,75,.09);color:#745a22;font-size:13px;font-weight:600}
+.source-copy.copy-layout>p.copy-bullet{padding-left:39px;position:relative}
+.source-copy.copy-layout>p.copy-bullet:before{content:'';position:absolute;left:20px;top:27px;width:7px;height:7px;border-radius:50%;background:var(--green)}
+.source-copy.copy-layout strong{display:block;margin-bottom:7px;color:#153d50;font:700 12px/1.4 Manrope,sans-serif;letter-spacing:.06em;text-transform:uppercase}
+.chapter:nth-child(odd) .source-copy.copy-layout>p:not(.copy-subhead):not(.copy-caption){background-color:rgba(244,246,238,.9)}
+.model-visualizer{margin-bottom:clamp(38px,5vh,60px)}
+@media(max-width:1150px){.chapter{grid-template-columns:minmax(78px,.42fr) minmax(0,2fr);padding-left:clamp(22px,6vw,75px);padding-right:clamp(22px,6vw,75px);gap:clamp(18px,3vw,38px)}.source-copy.copy-layout{grid-template-columns:1fr}.source-copy.copy-layout>p:first-child:not(.copy-subhead),.source-copy.copy-layout>p.copy-lead,.source-copy.copy-layout>p.copy-wide{grid-column:1}.visualizer-panel{max-width:820px}.viz-branches:not(.viz-branches--ten):not(.viz-branches--modules){grid-template-columns:repeat(3,minmax(0,1fr))}.viz-node{padding:16px}}
+@media(max-width:760px){.chapter:not(.hero){padding-top:38px;padding-bottom:74px}.source-copy.copy-layout{gap:10px}.source-copy.copy-layout>p{padding:15px 16px;border-radius:12px}.source-copy.copy-layout>p:first-child:not(.copy-subhead){padding:18px 19px}.source-copy.copy-layout>p.copy-subhead{margin-top:9px;padding:8px 1px 4px}.source-copy.copy-layout>p.copy-bullet{padding-left:34px}.source-copy.copy-layout>p.copy-bullet:before{left:16px;top:23px}.viz-branches:not(.viz-branches--ten):not(.viz-branches--modules){grid-template-columns:1fr}}

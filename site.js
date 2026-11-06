@@ -54,3 +54,15 @@ if(visualizer){
   });
   render('teras');
 }
+for(const copy of document.querySelectorAll('.source-copy')){
+  copy.classList.add('copy-layout');
+  [...copy.children].forEach((item,index)=>{
+    if(item.tagName!=='P')return;
+    const text=item.textContent.trim();
+    if(/^Rajah\s+\d+/i.test(text)){item.classList.add('copy-caption');return;}
+    if(text.length<=92&&!/[.!?;]/.test(text)&&!text.startsWith('•')){item.classList.add('copy-subhead');return;}
+    if(text.startsWith('•'))item.classList.add('copy-bullet');
+    if(index===0&&text.length>110)item.classList.add('copy-lead');
+    if(text.length>320)item.classList.add('copy-wide');
+  });
+}
